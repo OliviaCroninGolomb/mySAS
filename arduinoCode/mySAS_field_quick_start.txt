@@ -1,0 +1,31 @@
+mySAS Logger – Field Quick Start
+================================
+
+Use this in the field for rapid deployment.
+
+----------------------------------------------------
+Startup
+----------------------------------------------------
+1. Start Python listener on your laptop:
+   mySAS_listener.py
+
+2. Power HUZZAH32 via USB or battery.
+
+3. Verify LED:
+   - Fast blink: GPS fix + all sensors OK
+   - Slow blink: sensors OK, GPS no fix
+   - Triple blink: a sensor failed
+
+----------------------------------------------------
+WiFi
+----------------------------------------------------
+- Device must be on the same network as laptop.
+- serverIP in code must match laptop's local IP.
+- Use hotspot if institutional network blocks TCP.
+
+----------------------------------------------------
+Shut Down
+----------------------------------------------------
+1. Stop Python listener (Ctrl+C).
+2. Safely eject SD card.
+3. Retrieve CSV logs from SD and/or saved file from listener.
